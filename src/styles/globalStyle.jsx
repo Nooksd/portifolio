@@ -1,12 +1,17 @@
 import { createGlobalStyle } from 'styled-components';
-import { PrimaryBrightColor, PrimaryDarkColor, secundaryBrightColor, secundaryDarkColor } from '../config/Colors';
+import * as colors from '../config/Colors';
 
 export default createGlobalStyle`
-    * {margin: 0; padding: 0; border: 0; box-sizing: border-box};
+    * {margin: 0; padding: 0; border: 0; box-sizing: border-box; text-decoration: none};
 
     body {
-        background-color: ${PrimaryDarkColor};
-        color: ${PrimaryBrightColor};
+        background-color: ${colors.PrimaryDarkColor};
+        font-family: serif;
     }
 
+    .container {
+        max-width: 1500px;
+        margin: 0 auto;
+        font-weight: 600;
+    } 
 `;
